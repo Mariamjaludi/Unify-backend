@@ -35,12 +35,13 @@ The API has the following end-points: <br>
 
 ## Deployment
 
-This API is currently hosted on [Heroku](https://myconcierge-app-api.herokuapp.com/).
+This API is currently hosted on [Heroku](https://unify-backend.herokuapp.com).
 
 The API has the following deployed end-points: <br>
-* [/hotels](https://myconcierge-app-api.herokuapp.com/hotels) <br>
-* [/guests](https://myconcierge-app-api.herokuapp.com/guests) <br>
-* [/bookings](https://myconcierge-app-api.herokuapp.com/guests) <br>
+* [/students](https://unify-backend.herokuapp.com/students) <br>
+* [/universities](https://unify-backend.herokuapp.com/universities) <br>
+* [/courses](https://unify-backend.herokuapp.com/courses) <br>
+* [/subjects](https://unify-backend.herokuapp.com/subjects) <br>
 
 ## Front-End
 
