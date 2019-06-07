@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  resources :university_courses
+
   resources :university_course_subjects
-  resources :universities
-  resources :subjects
-  resources :students
-  resources :student_subjects
+  resources :university_courses
   resources :student_courses
+  resources :student_subjects
+  resources :students
+  resources :subjects
   resources :courses
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :universities
+
+  post '/login', to: 'students#login'
 end
