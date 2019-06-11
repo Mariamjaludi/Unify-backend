@@ -6,7 +6,7 @@ class AuthController < ApplicationController
     if student && student.authenticate(params[:password])
       payload = {student_id: student.id}
       token = issue_token(payload)
-      render json: { jwt: token, Student: StudentSerializer.new(student)}
+      render json: { jwt: token, student: StudentSerializer.new(student)}
     else
       render json: { error: "The token couldn't be created. Login failed."}
     end

@@ -5,34 +5,14 @@ class StudentsController < ApplicationController
   # GET /students
   def index
     @students = Student.all
-    render json: @students, adapter: :json
+    render json: @students, include: '*.*'
   end
 
   # GET /students/1
   def show
-    render json: @student, serializer: StudentSerializer
+    render json: @student, include: '*.*'
   end
 
-
-  # def login
-  #   @student = Student.find_by(
-  #     name: params[:name],
-  #     ucas_id: params[:ucas_id]
-  #   )
-  #   render json: @student
-  # end
-
-  # def create
-  #   student = Student.new(name: params[:name], password: params[:password])
-  #   if student.save
-  #     payload = {student_id: student.id}
-  #     token = issue_token(payload)
-  #     render json: { jwt: token }
-  #   else
-  #     render json: { error: "Signup not successful !"}
-  #   end
-  # end
-  # POST /students
   def create
 
     @student = Student.new(
