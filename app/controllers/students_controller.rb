@@ -45,7 +45,7 @@ class StudentsController < ApplicationController
     )
 
     if @student.save
-      payload= {student_id: guest.id}
+      payload= {student_id: student.id}
       token = issue_token(payload)
       subject1 = Subject.find_by(name: student_params[:subject_grades][0][:subject])
       subject2 = Subject.find_by(name: student_params[:subject_grades][1][:subject])
