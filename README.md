@@ -7,7 +7,7 @@ Unify is a portal for prospective university students in the United Kingdom to f
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-This API was created using Ruby version 2.6.1 and PostgreSQL for the database.
+NPM program. The NPM program is already installed on your computer when you install Node.js.
 
 ### Installing
 
@@ -51,7 +51,7 @@ The front-end repository can be found [here](https://github.com/Mariamjaludi/Uni
 
 ## Demo
 
-[![Unify Demo](http://img.youtube.com/vi/E6CHLd-bafc/0.jpg)](http://www.youtube.com/watch?v=E6CHLd-bafc "myConcierge Demo")
+[![Unify Demo](http://img.youtube.com/vi/E6CHLd-bafc/0.jpg)](http://www.youtube.com/watch?v=E6CHLd-bafc "Unify Demo")
 
 You can find a demo of the application [here](https://youtu.be/E6CHLd-bafc).
 
@@ -63,31 +63,5 @@ You can find a demo of the application [here](https://youtu.be/E6CHLd-bafc).
 
 ## Authors
 
-* Harry Bhatt: [Github](https://github.com/LondonBishop)
 * Mariam Jaludi
-
-
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Harry Bhatt: [Github](https://github.com/LondonBishop)

@@ -28,7 +28,9 @@ class University < ApplicationRecord
           hash = {
             subject_id: ucs.subject.id,
             subject_name: ucs.subject.name,
-            minimum_grade: ucs.grade
+            minimum_grade: ucs.grade,
+            grade_val: ucs.grade_val
+
           }
           @unis[i][:courses][j][:subjects] << hash
         end

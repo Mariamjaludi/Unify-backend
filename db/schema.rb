@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_07_153731) do
+ActiveRecord::Schema.define(version: 2019_06_11_143312) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2019_06_07_153731) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
   create_table "subjects", force: :cascade do |t|
@@ -67,6 +68,7 @@ ActiveRecord::Schema.define(version: 2019_06_07_153731) do
     t.integer "university_course_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "grade_val"
   end
 
   create_table "university_courses", force: :cascade do |t|
