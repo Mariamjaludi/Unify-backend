@@ -911,9 +911,9 @@ UniversityCourseSubject.create(university_course_subjects)
 
 ###########################SAMPLE STUDENTS##########################################
 students = [
-  { name: 'Mariam', ucas_id: 1234, school_name: 'Test School', location: 'London', enrollment_year: '2019' },
-  { name: 'Harry', ucas_id: 1235, school_name: 'Test School', location: 'London', enrollment_year: '2019' },
-  { name: 'Alex', ucas_id: 1236, school_name: 'Test School', location: 'London', enrollment_year: '2019' }
+  { name: 'Mariam', password: '123', ucas_id: 1234, school_name: 'Test School', location: 'London', enrollment_year: '2019' },
+  { name: 'Baz', password: '123', ucas_id: 1235, school_name: 'Test School', location: 'London', enrollment_year: '2019' },
+  { name: 'Alex', password: '123', ucas_id: 1236, school_name: 'Test School', location: 'London', enrollment_year: '2019' }
 ]
 
 Student.create(students)

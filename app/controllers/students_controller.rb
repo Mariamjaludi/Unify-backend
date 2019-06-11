@@ -22,6 +22,16 @@ class StudentsController < ApplicationController
   #   render json: @student
   # end
 
+  # def create
+  #   student = Student.new(name: params[:name], password: params[:password])
+  #   if student.save
+  #     payload = {student_id: student.id}
+  #     token = issue_token(payload)
+  #     render json: { jwt: token }
+  #   else
+  #     render json: { error: "Signup not successful !"}
+  #   end
+  # end
   # POST /students
   def create
 

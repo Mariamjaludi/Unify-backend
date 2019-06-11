@@ -20,7 +20,6 @@ class AuthController < ApplicationController
     end
   end
 
-  private
 
 
 end
