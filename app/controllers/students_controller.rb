@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    byebug
+    # byebug
     @student = Student.new(
       name: student_params[:name],
       ucas_id: student_params[:ucas_id],
