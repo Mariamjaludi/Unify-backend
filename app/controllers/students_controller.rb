@@ -14,18 +14,18 @@ class StudentsController < ApplicationController
   end
 
   def create
-
+    byebug
     @student = Student.new(
       name: student_params[:name],
       ucas_id: student_params[:ucas_id],
-      password: student_params[:password],
+      password: params[:password],
       school_name: student_params[:school_name],
       location: student_params[:location],
       enrollment_year: student_params[:enrollment_year]
     )
 
     if @student.save
-      payload= {student_id: student.id}
+      payload= {student_id: @student.id}
       token = issue_token(payload)
       # subject1 = Subject.find_by(name: student_params[:subject_grades][0][:subject])
       # subject2 = Subject.find_by(name: student_params[:subject_grades][1][:subject])
@@ -49,7 +49,7 @@ class StudentsController < ApplicationController
       #   grade: student_params[:subject_grades][2][:grade]
       # )
 
-      render json: { jwt: token }
+      render json: { jwt: token, student: StudentSerializer.new(@student)}
     else
       render json: { error: "Signup not successful !"}
     end
