@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   resources :courses
   resources :universities
 
-  post '/login', to: 'students#login'
+  post '/auth/create', to: 'auth#create'
+  get "/auth/show", to: 'auth#show'
 end
